@@ -1,6 +1,3 @@
-# config/settings.py
-
-# Top 100 USDT symbols
 TOP_SYMBOLS = [
     "BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "XRPUSDT", "DOGEUSDT", "ADAUSDT",
     "AVAXUSDT", "MATICUSDT", "DOTUSDT", "SHIBUSDT", "TRXUSDT", "LINKUSDT", "OPUSDT",
@@ -18,9 +15,12 @@ TOP_SYMBOLS = [
     "RAYUSDT", "BAKEUSDT", "CTSIUSDT", "PERPUSDT", "DEXEUSDT", "NUUSDT", "REEFUSDT",
     "TRBUSDT", "LITUSDT"
 ]
+    
 
-# Binance API endpoint
-BINANCE_KLINES_API = "https://api.binance.com/api/v3/klines"
+
+REFRESH_INTERVAL = 15000  # 15 seconds
+
 
 # GUI refresh interval (ms)
 REFRESH_INTERVAL = 15000
+ 

@@ -1,14 +1,13 @@
 import tkinter as tk
 import winsound
 
-
-def show_signal_popup(root, symbol, signal):
+def show_popup(root, symbol, signal):
     popup = tk.Toplevel(root)
     popup.configure(bg="black")
-    popup.geometry("260x120+600+300")
+    popup.geometry("250x100+600+300")
 
     color = "green" if signal == "LONG" else "red"
-    text = f"{symbol} → {signal}"
+    text = f"{symbol} → {signal}!"
 
     label = tk.Label(
         popup,
@@ -23,3 +22,5 @@ def show_signal_popup(root, symbol, signal):
     winsound.Beep(1300, 300)
 
     popup.after(5000, popup.destroy)
+
+
